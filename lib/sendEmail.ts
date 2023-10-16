@@ -1,6 +1,6 @@
 "use server"
 import { Resend } from 'resend';
-import { ContactFormEmailTemplate } from '@/components/emailTemplates/contactForm';
+import { ContactFormEmailTemplate } from '@/components/emailTemplates/ContactFormEmailTemplate';
 import React from 'react';
 
 export const sendEmail = async () => {
@@ -13,8 +13,8 @@ export const sendEmail = async () => {
   console.log("formData", formData)
 
   if (!process.env.RESEND_API_KEY) {
-    console.log('RESEND_APIKEY not found');
-    return { error: 'RESEND_APIKEY not found' };
+    console.log('RESEND_API_KEY not found');
+    return { error: 'RESEND_API_KEY not found' };
   }
   const destEmail = process.env.CONTACT_EMAIL;
   if (!destEmail) {
