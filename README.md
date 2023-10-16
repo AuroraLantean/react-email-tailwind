@@ -1,5 +1,12 @@
 ## React-Email-Tailwind Error Demo App
 
+## Add Environment Variables in `.env.local`
+
+```
+RESEND_API_KEY=
+CONTACT_EMAIL=
+```
+
 ## Install NPM Package Manager and this repo packages
 
 See [PNPM installation](https://pnpm.io/installation)
@@ -30,4 +37,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Browser Requirement
 
 [NextJs Requirement](https://nextjs.org/docs/getting-started/installation)
-
